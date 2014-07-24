@@ -1,0 +1,37 @@
+background		no
+use_xft			yes
+xftfont			Courier:size=12
+xftalpha                0.5
+draw_shades no
+double_buffer		yes
+update_interval		1
+alignment		bottom
+gap_x			1496
+gap_y			300
+no_buffers		yes
+minimum_size 		330 1000
+maximum_width		500
+pad_percents		0
+max_text_width          250
+
+own_window yes
+own_window_title ConkyFloatWeather
+own_window_type dock
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent yes
+own_window_argb_visual yes
+own_window_argb_value 10
+text_buffer_size 4096
+imlib_cache_size 0  
+
+
+
+TEXT
+${image ~/.conky/images/weather.png -p 110,430 -s 120x120}
+${voffset 420}${offset 230}${font Roboto:style=Normal:size=70}${exec head -n 1 ~/.conky/weathertemp.txt}${font Roboto:style=Normal:size=20}${voffset -45}°C
+${voffset 45}${color #cccccc}${font Roboto:style=Normal:size=15}${alignr}${offset -85}${exec head -n 1 ~/.conky/weathertemptext.txt}
+${voffset 5}${offset 50}${color #FFFFFF}${font Roboto:style=Normal:size=100}${alignr}${time %H:%M} 
+${voffset -110}${offset 190}${color #cccccc}${alignr}${font Roboto:style=Normal:size=22}${time %a %d %B}
+
+
+
