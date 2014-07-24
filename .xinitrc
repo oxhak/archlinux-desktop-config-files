@@ -16,8 +16,4 @@ xset -dpms &
 xset s noblank &
 xset s 0 0 &
 xset s noexpose & 
-#sh -c '/usr/bin/nvidia-settings --load-config-only' &
 exec herbstluftwm
-#exec cinnamon-session
-sleep 2 &
-herbstclient reload
