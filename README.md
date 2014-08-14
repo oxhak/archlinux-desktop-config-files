@@ -1,2 +1,0 @@
-archlinux-desktop-config-files
-=================
