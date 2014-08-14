@@ -20,7 +20,7 @@ urxvt.background: [100]#0A0A0A
      
 URxvt*foreground: #FFFFFF
 URxvt*background: #0A0A0A
-
+ 
 !! black dark/light
 *color0: #121212
 *color8: #2e3436
