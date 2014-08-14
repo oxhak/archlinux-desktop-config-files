@@ -5,7 +5,7 @@ URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.url-launcher:     firefox
 URxvt.matcher.button:   1
 URxvt.font: xft:droidsansmono:size=14
-URxvt.letterSpace: 0
+URxvt.letterSpace: -1
 URxvt.lineSpace: 3
 urxvt*termName: rxvt
 urxvt*scrollBar:false
@@ -16,32 +16,39 @@ URxvt.internalBorder:   10
 URxvt*saveLines: 12000
      
 urxvt*depth: 32
-urxvt.background: [50]#0A0A0A
+urxvt.background: [100]#0A0A0A
      
 URxvt*foreground: #FFFFFF
 URxvt*background: #0A0A0A
 
-!black
-*color0: #222222
-*color8: #666666
-!red
-*color1: #C44242
-*color9: #ED5555
-!green
-*color2: #73BA41
-*color10: #86D64D
-!yellow
-*color3: #E0C650
-*color11: #EDD155
-!blue
-*color4: #1481bd
-*color12: #043a5a
-!magenta
-*color5: #ED61C5
-*color13: #E16A98
-!cyan
-*color6: #478EC1
-*color14: #55ACEE
-!white
-*color7: #CCCCCC
-*color15: #FFFFFF
+!! black dark/light
+*color0: #121212
+*color8: #2e3436
+ 
+!! red dark/light
+*color1: #a35b66
+*color9: #ab6b74
+ 
+!! green dark/light
+*color2: #99ab6f
+*color10: #acb972
+ 
+!! yellow dark/light
+*color3: #ca9733
+*color11: #ccaa69
+ 
+!! blue dark/light
+*color4: #495d6e
+*color12: #687987
+ 
+!! magenta dark/light
+*color5: #825969
+*color13: #977381
+ 
+!! cyan dark/light
+*color6: #839191
+*color14: #98a4a4
+ 
+!! white dark/light
+*color7: #e0e0e0
+*color15: #e5e5e5
