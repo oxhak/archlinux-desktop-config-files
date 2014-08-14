@@ -16,4 +16,4 @@ xset -dpms &
 xset s noblank &
 xset s 0 0 &
 xset s noexpose & 
-exec herbstluftwm
+exec herbstluftwm 
