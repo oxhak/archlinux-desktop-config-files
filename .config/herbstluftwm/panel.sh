@@ -30,7 +30,7 @@ function uniq_linebuffered() {
         done
         conky_text_only=$(echo -n "$conky "|sed 's.\^[^(]*([^)]*)..g')
         width=$(textwidth "$FONT" "$conky_text_only  ")
-        echo -n "  ^bg(#178FD1) ^bg(#0A0A0A)^fg(#ffffff)  $conky  ^bg(#178FD1) ^bg(#0A0A0A)"
+        echo -n "  ^bg(#495d6e) ^bg(#0A0A0A)^fg(#ffffff)  $conky  ^bg(#495d6e) ^bg(#0A0A0A)"
         echo
         read line || break
         cmd=( $line )

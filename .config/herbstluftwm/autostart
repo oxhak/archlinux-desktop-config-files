@@ -91,8 +91,8 @@ hc keybind Print spawn ~/.config/herbstluftwm/screenshot.sh
 hc keybind $Mod-F2 spawn dmenu_run -b -i #-nb '#729FCF' -nf '#888888' -sb '#FFFF84' -sf '#1e1e1e'
 
 # colors
-hc set frame_border_active_color '#178FD1'
-hc set frame_border_normal_color '#178FD1'
+hc set frame_border_active_color '#495d6e'
+hc set frame_border_normal_color '#495d6e'
 hc set frame_bg_normal_color '#0A0A0A'
 hc set frame_bg_active_color '#0A0A0A'
 hc set frame_active_opacity 100
@@ -100,8 +100,8 @@ hc set frame_normal_opacity 100
 hc set frame_border_width 4
 hc set window_border_width 0
 hc set window_border_inner_width 0
-hc set window_border_normal_color '#178FD1'
-hc set window_border_active_color '#178FD1'
+hc set window_border_normal_color '#495d6e'
+hc set window_border_active_color '#495d6e'
 hc set frame_gap 8
 hc set always_show_frame 1
 hc set frame_bg_transparent 0
@@ -135,9 +135,10 @@ hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK)' manage=off
 
 hc rule title=ConkyFloatGraphs manage⁼off
 
+#hc rule title='Popcorn Time' tag=video focus=off
 hc rule title=vlc-video-float tag=video focus=off
 hc rule title=twitter-float tag=twitter focus=off
-#hc rule class~'ProjectM-pulseaudio' tag=test
+hc rule class~'ProjectM-pulseaudio' tag=video
 
 # unlock, just to be sure
 #hc unlock
@@ -162,7 +163,7 @@ hc use twitter
 hc lock_tag twitter
 
 hc focus_monitor 0
-hc use dev
+hc use term
 
 # find the panel
 #herbstclient pad $(herbstclient list_monitors | cut -d: -f1) 80 460 0 0;

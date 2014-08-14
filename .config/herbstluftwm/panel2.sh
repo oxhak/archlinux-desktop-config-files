@@ -29,16 +29,16 @@ function uniq_linebuffered() {
              #echo -n "  ^bg(#178FD1) ^bg(#c3c3cc)^fg(#0A0A0A)  ➜ ${i:1}  ^bg(#178FD1) ^bg(#0A0A0A)"
                ;;
             '#')
-               echo -n "  ^bg(#178FD1) ^bg(#c3c3cc)^fg(#0A0A0A)  ➜ ${i:1}  ^bg(#178FD1) ^bg(#0A0A0A)"
+               echo -n "  ^bg(#495d6e) ^bg(#c3c3cc)^fg(#0A0A0A)  ➜ ${i:1}  ^bg(#495d6e) ^bg(#0A0A0A)"
                ;;
             ':')
-               echo -n "  ^bg(#178FD1) ^bg(#0A0A0A)^fg(#FFFFFF)  ${i:1}  ^bg(#178FD1) ^bg(#0A0A0A)"
+               echo -n "  ^bg(#495d6e) ^bg(#0A0A0A)^fg(#FFFFFF)  ${i:1}  ^bg(#495d6e) ^bg(#0A0A0A)"
                ;;
            '!')
-               echo -n "  ^bg(#178FD1) ^bg(#c3c3cc)^fg(#0A0A0A)  • ${i:1}  ^bg(#178FD1) ^bg(#0A0A0A)"
+               echo -n "  ^bg(#495d6e) ^bg(#c3c3cc)^fg(#0A0A0A)  • ${i:1}  ^bg(#495d6e) ^bg(#0A0A0A)"
                ;;
             *)
-                 echo -n "  ^bg(#178FD1) ^bg(#0A0A0A)^fg(#CCCCCC)  ${i:1}  ^bg(#178FD1) ^bg(#0A0A0A)"
+                 echo -n "  ^bg(#495d6e) ^bg(#0A0A0A)^fg(#CCCCCC)  ${i:1}  ^bg(#495d6e) ^bg(#0A0A0A)"
                ;;
 
 
