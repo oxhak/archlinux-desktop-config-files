@@ -2,7 +2,7 @@
 
 ## dzen stuff
 FG='#FFFFFF'
-BG='#0A0A0A'
+BG='#1f1f1f'
 FONT="-*-terminus-normal-*-*-*-14-*-*-*-*-*-*-*"
 
 function uniq_linebuffered() {
@@ -29,16 +29,16 @@ function uniq_linebuffered() {
              #echo -n "  ^bg(#178FD1) ^bg(#c3c3cc)^fg(#0A0A0A)  ➜ ${i:1}  ^bg(#178FD1) ^bg(#0A0A0A)"
                ;;
             '#')
-               echo -n "  ^bg(#495d6e) ^bg(#c3c3cc)^fg(#0A0A0A)  ➜ ${i:1}  ^bg(#495d6e) ^bg(#0A0A0A)"
+               echo -n "  ^bg(#2b2b2b) ^bg(#049372)^fg(#ffffff)  ➜ ${i:1}  ^bg(#2b2b2b) ^bg(#1f1f1f)"
                ;;
             ':')
-               echo -n "  ^bg(#495d6e) ^bg(#0A0A0A)^fg(#FFFFFF)  ${i:1}  ^bg(#495d6e) ^bg(#0A0A0A)"
+               echo -n "  ^bg(#2b2b2b) ^bg(#1f1f1f)^fg(#ececec)  ${i:1}  ^bg(#2b2b2b) ^bg(#1f1f1f)"
                ;;
            '!')
-               echo -n "  ^bg(#495d6e) ^bg(#c3c3cc)^fg(#0A0A0A)  • ${i:1}  ^bg(#495d6e) ^bg(#0A0A0A)"
+               echo -n "  ^bg(#2b2b2b) ^bg(#8E44AD)^fg(#ffffff)  • ${i:1}  ^bg(#2b2b2b) ^bg(#1f1f1f)"
                ;;
             *)
-                 echo -n "  ^bg(#495d6e) ^bg(#0A0A0A)^fg(#CCCCCC)  ${i:1}  ^bg(#495d6e) ^bg(#0A0A0A)"
+                 echo -n "  ^bg(#2b2b2b) ^bg(#1f1f1f)^fg(#ececec)  ${i:1}  ^bg(#2b2b2b) ^bg(#1f1f1f)"
                ;;
 
 
@@ -54,4 +54,4 @@ function uniq_linebuffered() {
                   ;;
                esac
      done
-} 2> /dev/null | dzen2 -ta c -y 1055 -h 25 -fg $FG -bg $BG -fn $FONT -title-name dzenbottom -e 'button2=;' & 
+} 2> /dev/null | dzen2 -ta c -y 1055 -h 25 -w 1920 -fg $FG -bg $BG -fn $FONT -title-name dzenbottom -e 'button2=;' & 

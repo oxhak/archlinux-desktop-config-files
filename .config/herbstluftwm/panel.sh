@@ -2,7 +2,7 @@
 
 ## dzen stuff
 FG='#FFFFFF'
-BG='#0A0A0A'
+BG='#1f1f1f'
 FONT="-*-terminus-normal-*-*-*-13-*-*-*-*-*-*-*"
 
 function uniq_linebuffered() {
@@ -30,7 +30,7 @@ function uniq_linebuffered() {
         done
         conky_text_only=$(echo -n "$conky "|sed 's.\^[^(]*([^)]*)..g')
         width=$(textwidth "$FONT" "$conky_text_only  ")
-        echo -n "  ^bg(#495d6e) ^bg(#0A0A0A)^fg(#ffffff)  $conky  ^bg(#495d6e) ^bg(#0A0A0A)"
+        echo -n "  ^bg(#2b2b2b) ^bg(#1f1f1f)^fg(#ececec)  $conky  ^bg(#2b2b2b) ^bg(#1f1f1f)"
         echo
         read line || break
         cmd=( $line )
