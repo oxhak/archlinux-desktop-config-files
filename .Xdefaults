@@ -11,44 +11,44 @@ urxvt*termName: rxvt
 urxvt*scrollBar:false
 urxvt*cursorBlink:  true
 urxvt*cursorUnderline: true
-urxvt*cursorColor:  #FFFFFF
+urxvt*cursorColor:  #ececec
 URxvt.internalBorder:   10
 URxvt*saveLines: 12000
      
 urxvt*depth: 32
-urxvt.background: [100]#0A0A0A
+urxvt.background: [100]#1f1f1f
      
-URxvt*foreground: #FFFFFF
-URxvt*background: #0A0A0A
- 
+URxvt*foreground: #ececec
+URxvt*background: #ffffff
+
 !! black dark/light
 *color0: #121212
 *color8: #2e3436
  
 !! red dark/light
-*color1: #a35b66
-*color9: #ab6b74
+*color1: #D64541
+*color9: #E74C3C
  
 !! green dark/light
-*color2: #99ab6f
-*color10: #acb972
+*color2: #049372
+*color10: #26C281
  
 !! yellow dark/light
-*color3: #ca9733
-*color11: #ccaa69
+*color3: #F7CA18
+*color11: #F5D76E
  
 !! blue dark/light
-*color4: #495d6e
-*color12: #687987
+*color4: #4183D7
+*color12: #59ABE3
  
 !! magenta dark/light
-*color5: #825969
-*color13: #977381
+*color5: #8E44AD
+*color13: #9B59B6
  
 !! cyan dark/light
-*color6: #839191
-*color14: #98a4a4
+*color6: #6BB9F0
+*color14: #89C4F4
  
 !! white dark/light
-*color7: #e0e0e0
-*color15: #e5e5e5
+*color7: #BDC3C7
+*color15: #ececec

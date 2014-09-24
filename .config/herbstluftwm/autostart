@@ -1,8 +1,8 @@
 #!/bin/bash
-exec /home/oxhak/Scripts/ConkyWeather.sh &
+#exec /home/oxhak/Scripts/ConkyWeather.sh &
 killall compton &
 killall conky &
-feh --bg-fill  ~/Images/wallpaper.png &
+#feh --bg-fill  ~/Images/wallpaper.png &
 killall dzen2 &
 
 function hc() {
@@ -11,8 +11,8 @@ function hc() {
 
 hc emit_hook reload
 
-xsetroot -solid '#000000'
-hsetroot -solid '#000000'
+
+hsetroot -solid '#1f1f1f'
 
 # remove all existing keybindings
 hc keyunbind --all
@@ -91,17 +91,17 @@ hc keybind Print spawn ~/.config/herbstluftwm/screenshot.sh
 hc keybind $Mod-F2 spawn dmenu_run -b -i #-nb '#729FCF' -nf '#888888' -sb '#FFFF84' -sf '#1e1e1e'
 
 # colors
-hc set frame_border_active_color '#495d6e'
-hc set frame_border_normal_color '#495d6e'
-hc set frame_bg_normal_color '#0A0A0A'
-hc set frame_bg_active_color '#0A0A0A'
+hc set frame_border_active_color '#2b2b2b'
+hc set frame_border_normal_color '#2b2b2b'
+hc set frame_bg_normal_color '#1f1f1f'
+hc set frame_bg_active_color '#1f1f1f'
 hc set frame_active_opacity 100
 hc set frame_normal_opacity 100
 hc set frame_border_width 4
 hc set window_border_width 0
 hc set window_border_inner_width 0
-hc set window_border_normal_color '#495d6e'
-hc set window_border_active_color '#495d6e'
+hc set window_border_normal_color '#2b2b2b'
+hc set window_border_active_color '#2b2b2b'
 hc set frame_gap 8
 hc set always_show_frame 1
 hc set frame_bg_transparent 0
@@ -138,7 +138,8 @@ hc rule title=ConkyFloatGraphs manage⁼off
 #hc rule title='Popcorn Time' tag=video focus=off
 hc rule title=vlc-video-float tag=video focus=off
 hc rule title=twitter-float tag=twitter focus=off
-hc rule class~'ProjectM-pulseaudio' tag=video
+hc rule title=tvterm tag=tv focus=off
+hc rule class~'ProjectM-pulseaudio' tag=tv
 
 # unlock, just to be sure
 #hc unlock
@@ -150,7 +151,7 @@ herbstclient set tree_style '╾│ ├└╼─┐'
 # or simply:
 #hc detect_monitors
 #hc set_monitors 1920x1080+0+0 1920x1080+0+0 
-hc set_monitors 1920x1080+0+0 1920x1080+0+0 1920x1080+0+0 
+hc set_monitors 1920x1080+0+0 1920x1080+0+0 1920x1080+0+0  #1920x1080+1920+0 
 
 hc chain , add video
 hc focus_monitor 1
@@ -162,6 +163,11 @@ hc focus_monitor 2
 hc use twitter
 hc lock_tag twitter
 
+#hc chain , add tv
+#hc focus_monitor 3
+#hc use tv
+#hc lock_tag tv
+
 hc focus_monitor 0
 hc use term
 
@@ -171,6 +177,7 @@ hc use term
 herbstclient pad 0 17 338 17 -6;
 herbstclient pad 1 17 -6 854 1573;
 herbstclient pad 2 217 -6 17 1573;
+#herbstclient pad 3 -12 -12 -12 -12;
 
 panel=~/.config/herbstluftwm/panel.sh
 $panel 0 &
@@ -189,8 +196,9 @@ $panel 0 &
 panel2=~/.config/herbstluftwm/panel2.sh
 $panel2 0 &
 
-sleep 1
-compton --backend glx --vsync opengl &
+#sleep 1
+#compton --backend glx --vsync opengl &
+#DISPLAY=:0.1 compton --backend glx --vsync opengl &
 #conky -c /home/oxhak/.conky/horloge &
 #transset-df .8 -n dzenbottom &
 #transset-df .8 -n dzentop &
