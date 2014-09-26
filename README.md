@@ -7,13 +7,13 @@ https://wiki.archlinux.org/index.php/Herbstluftwm
 
  keys
 =================
-create layout SUPER + O or SUPER + U
-resize layout height SUPER + CTRL + L or H
-resize layout width SUPER + CTRL + J or K
-move app to layout width SUPER + SHIFT + L or H 
-move app to layout height SUPDER + SHIFT + J or K
-remove layout SUPER + R
-focus to next layout SUPER + TAB
+create layout SUPER + O or SUPER + U<br>
+resize layout height SUPER + CTRL + L or H<br>
+resize layout width SUPER + CTRL + J or K<br>
+move app to layout width SUPER + SHIFT + L or H <br>
+move app to layout height SUPDER + SHIFT + J or K<br>
+remove layout SUPER + R<br>
+focus to next layout SUPER + TAB<br>
 
 screenshot
 =================
