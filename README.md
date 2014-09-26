@@ -17,4 +17,4 @@ focus to next layout SUPER + TAB<br>
 
 screenshot
 =================
-![Screenshot](https://github.com/altercation/oxhak/raw/master/screenshot.png "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/oxhak/archlinux-desktop-config-files/master/screenshot.png "Screenshot")
