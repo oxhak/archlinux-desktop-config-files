@@ -7,7 +7,8 @@ https://wiki.archlinux.org/index.php/Herbstluftwm
 
 resolution
 =================
-1920x1080 can change in *autostart*, *panel.sh*, *panel2.sh* and virtual monitors padding need some adjustements
+1920x1080<br>
+it can be changed in *autostart*, *panel.sh*, *panel2.sh* and virtual monitors padding need some adjustements
 
 tags
 =================
