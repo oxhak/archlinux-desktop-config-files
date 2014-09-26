@@ -12,6 +12,7 @@ PS1='\u\w: '
 #///////////HERBSTLUFTWM
 #use: hcadd *name* (for adding empty tag)
 #use: add *nameapp* (for adding tag with app)
+#use: hcrm *name tag* (for removing existing tag)
 alias hc='herbstclient'
 alias hcadd='herbstclient add'
 alias hcrm='herbstclient merge_tag'
