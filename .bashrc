@@ -15,7 +15,7 @@ PS1='\u\w: '
 alias hc='herbstclient'
 alias hcadd='herbstclient add'
 alias hcrm='herbstclient merge_tag'
-alias add='/home/oxhak/.start.sh'
+alias add='~/.start.sh'
 
 #///////////APPLICATIONS 
 #this is an example how to run app
