@@ -5,6 +5,12 @@ https://wiki.archlinux.org/index.php/Herbstluftwm
 
 <b>When WM start, I need to reload it one time to hide tags of others virtuals monitors (two at right) with SUPER + SHIFT + R keys.</b>
 
+tags
+=================
+hcadd *name* (for adding empty tag)
+add *nameapp* (for adding tag with app)
+crm *name tag* (for removing existing tag)
+
  keys
 =================
 open terminal (urxvt) SUPER + T<br>
