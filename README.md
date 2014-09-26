@@ -9,7 +9,7 @@ tags
 =================
 hcadd *name* (for adding empty tag)<br>
 add *nameapp* (for adding tag with app)<br>
-crm *name tag* (for removing existing tag)<br>
+hcrm *name tag* (for removing existing tag)<br>
 
  keys
 =================
