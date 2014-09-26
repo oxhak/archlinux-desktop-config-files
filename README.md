@@ -7,9 +7,9 @@ https://wiki.archlinux.org/index.php/Herbstluftwm
 
 tags
 =================
-hcadd *name* (for adding empty tag)
-add *nameapp* (for adding tag with app)
-crm *name tag* (for removing existing tag)
+hcadd *name* (for adding empty tag)<br>
+add *nameapp* (for adding tag with app)<br>
+crm *name tag* (for removing existing tag)<br>
 
  keys
 =================
