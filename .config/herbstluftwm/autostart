@@ -173,11 +173,9 @@ hc use term
 
 # find the panel
 #herbstclient pad $(herbstclient list_monitors | cut -d: -f1) 80 460 0 0;
-#herbstclient pad 0 40 0 45 0;
 herbstclient pad 0 17 338 17 -6;
 herbstclient pad 1 17 -6 854 1573;
 herbstclient pad 2 217 -6 17 1573;
-#herbstclient pad 3 -12 -12 -12 -12;
 
 panel=~/.config/herbstluftwm/panel.sh
 $panel 0 &
@@ -196,9 +194,7 @@ $panel 0 &
 panel2=~/.config/herbstluftwm/panel2.sh
 $panel2 0 &
 
-#sleep 1
-#compton --backend glx --vsync opengl &
-#DISPLAY=:0.1 compton --backend glx --vsync opengl &
-#conky -c /home/oxhak/.conky/horloge &
+sleep 1
+compton --backend glx &
 #transset-df .8 -n dzenbottom &
 #transset-df .8 -n dzentop &
