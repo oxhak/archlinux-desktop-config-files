@@ -1,5 +1,10 @@
 Ox HaK ArchLinux Desktop Config Files
 =================
+
+screenshot
+=================
+![Screenshot](https://raw.githubusercontent.com/oxhak/archlinux-desktop-config-files/master/screenshot.png "Screenshot")
+
 WM is Herbsluftwm
 https://wiki.archlinux.org/index.php/Herbstluftwm
 
@@ -39,7 +44,3 @@ switch to next right tag *SUPER + RIGHT ARROW*<br>
 switch to next left tag *SUPER + LEFT ARROW*<br>
 full screen *SUPER + F*<br>
 remove layout *SUPER + R*<br>
-
-screenshot
-=================
-![Screenshot](https://raw.githubusercontent.com/oxhak/archlinux-desktop-config-files/master/screenshot.png "Screenshot")
