@@ -8,6 +8,16 @@
 alias ls='ls --color=auto'
 PS1='\u\w: '
 
+#///////////UPDATE SYSTEM
+alias update='yaourt -Syu --aur --noconfirm'
+
+#///////////POWER OFF
+alias veille='sudo pm-suspend'
+alias reboot='sudo shutdown -r now'
+alias turnoff='sudo shutdown -h now'
+
+#///////////KILL XORG
+alias killx='sudo pkill X'
 
 #///////////HERBSTLUFTWM
 #use: hcadd *name* (for adding empty tag)
@@ -18,9 +28,11 @@ alias hcadd='herbstclient add'
 alias hcrm='herbstclient merge_tag'
 alias add='$HOME/.start.sh'
 
-#///////////APPLICATIONS 
+#////// Open VLC at the top right layout (vlc need config with external video window)
+alias vlcmini='(herbstclient add vlc && herbstclient move_monitor maintwitter 352x830+1568+225 && herbstclient add video && herbstclient add_monitor 1920x1080+0+0 video mainvideo && herbstclient pad mainvideo 25 0 846 1568 && herbstclient lock_tag mainvideo && herbstclient use vlc && vlc --video-title=vlc-video-float >/dev/null 2>&1 && herbstclient use term && herbstclient remove_monitor mainvideo && herbstclient move_monitor maintwitter 352x1030+1568+25 && herbstclient merge_tag vlc && herbstclient merge_tag video &)'
+
+#///////////APPLICATIONS
 #this is an example how to run app
-alias skype='(export PULSE_LATENCY_MSEC=60 && herbstclient add skype && herbstclient use skype && skype >/dev/null 2>&1 && herbstclient use term && herbstclient merge_tag skype &)'
 alias steam='(herbstclient add steam && herbstclient use steam && steam >/dev/null 2>&1 && herbstclient use term && herbstclient merge_tag steam &)'
 alias music='(herbstclient add music && herbstclient use music && urxvt -e cmus >/dev/null 2>&1 && herbstclient use term && herbstclient merge_tag music &)'
 alias twitter='(urxvt -title twitter-float -e ttytter -ssl -dostream -readline -ansi -newline -exts=$HOME/.ttytter/oxhak_ttytter_output.pl >/dev/null 2>&1 &)'
