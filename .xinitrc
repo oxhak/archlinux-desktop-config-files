@@ -17,6 +17,5 @@ xset s 0 0 &
 xset s noexpose &
 compton --backend glx &
 feh --bg-fill  ~/Images/wallpaper.jpg &
-exec $HOME/Scripts/ConkyWeather.sh &
 exec $HOME/.config/herbstluftwm/startup.sh &
 exec herbstluftwm
