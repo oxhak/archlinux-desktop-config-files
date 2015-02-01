@@ -1,8 +1,6 @@
 Ox HaK ArchLinux Desktop Config Files
 =================
 
-screenshot
-=================
 ![Screenshot](https://raw.githubusercontent.com/oxhak/archlinux-desktop-config-files/master/screenshot.png "Screenshot")
 
 WM is Herbsluftwm
