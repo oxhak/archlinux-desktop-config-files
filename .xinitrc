@@ -16,6 +16,6 @@ xset s noblank &
 xset s 0 0 &
 xset s noexpose &
 compton --backend glx &
-feh --bg-fill  ~/Images/wallpaper.jpg &
+feh --bg-fill $HOME/Images/wallpaper.jpg &
 exec $HOME/.config/herbstluftwm/startup.sh &
 exec herbstluftwm
