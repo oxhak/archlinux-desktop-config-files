@@ -3,6 +3,9 @@ Ox HaK ArchLinux Desktop Config Files
 WM is Herbsluftwm
 https://wiki.archlinux.org/index.php/Herbstluftwm
 
+More commands informations
+http://herbstluftwm.org/herbstluftwm.html
+
 archlinux dependency's
 =================
 herbstluftwm dzen2 rxvt-unicode compton transset-df monaco-powerline-font-git mplayer scrot conky feh ttytter perl-term-readline-ttytter xorg-fonts-type1 ttf-dejavu artwiz-fonts font-bh-ttf font-bitstream-speedo gsfonts sdl_ttf ttf-bitstream-vera ttf-cheapskate ttf-liberation
