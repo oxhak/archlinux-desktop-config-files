@@ -3,6 +3,10 @@ archlinux-desktop-config-files
 WM is Herbsluftwm
 https://wiki.archlinux.org/index.php/Herbstluftwm
 
+archlinux dependency's
+=================
+herbstluftwm dzen2 compton transset-df monaco-powerline-font-git scrot conky xorg-fonts-type1 ttf-dejavu artwiz-fonts font-bh-ttf font-bitstream-speedo gsfonts sdl_ttf ttf-bitstream-vera ttf-cheapskate ttf-liberation
+
 resolution
 =================
 1920x1080<br>
