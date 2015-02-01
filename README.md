@@ -20,7 +20,7 @@ hcrm *name tag* (for removing existing tag)<br>
 
  keys
 =================
-reload Herbstluftwm *SUPER +SHIFT + R*<br>
+reload Herbstluftwm *SUPER + SHIFT + R*<br>
 open terminal (urxvt) *SUPER + T*<br>
 create layout *SUPER + O or U*<br>
 focus to next layout *SUPER + TAB*<br>
