@@ -29,7 +29,7 @@ create layout *SUPER + O or U*<br>
 focus to next layout *SUPER + TAB*<br>
 resize layout height *SUPER + CTRL + L or H*<br>
 resize layout width *SUPER + CTRL + J or K*<br>
-move app to layout width *SUPER + SHIFT + L or H *<br>
+move app to layout width *SUPER + SHIFT + L or H*<br>
 move app to layout height *SUPER + SHIFT + J or K*<br>
 float mode *SUPER + S*<br>
 move layout with mouse in float mode *SUPER + LEFT CLICK + MOVE*<br>
