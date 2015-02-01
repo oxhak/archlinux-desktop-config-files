@@ -5,7 +5,7 @@ https://wiki.archlinux.org/index.php/Herbstluftwm
 
 archlinux dependency's
 =================
-herbstluftwm dzen2 rxvt-unicode compton transset-df monaco-powerline-font-git scrot conky feh ttytter perl-term-readline-ttytter xorg-fonts-type1 ttf-dejavu artwiz-fonts font-bh-ttf font-bitstream-speedo gsfonts vlc mplayer sdl_ttf ttf-bitstream-vera ttf-cheapskate ttf-liberation
+herbstluftwm dzen2 rxvt-unicode compton transset-df monaco-powerline-font-git mplayer scrot conky feh ttytter perl-term-readline-ttytter xorg-fonts-type1 ttf-dejavu artwiz-fonts font-bh-ttf font-bitstream-speedo gsfonts sdl_ttf ttf-bitstream-vera ttf-cheapskate ttf-liberation
 
 resolution
 =================
