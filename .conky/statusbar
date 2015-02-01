@@ -25,7 +25,7 @@ draw_shades yes
 ## How strict should if_up be when testing an interface for being up?
 ## The value is one of up, link or address, to check for the interface
 ## being solely up, being up and having link or being up, having link
-## and an assigned IP address. 
+## and an assigned IP address.
 if_up_strictness address
 
 
@@ -33,5 +33,4 @@ if_up_strictness address
 override_utf8_locale no
 
 TEXT
-$kernel · $uptime · CPU ${cpu}%  RAM ${memperc}% · CPU ${execi 8 sensors | grep -A 0 'Physical id 0:' |cut -c18-19 }° GPU ${execi 8 nvidia-settings -q gpucoretemp | grep -A 0 '(archlinux:0.0): ' |cut -c44-45}° · F1 ${execi 8 sensors | grep -A 0 'fan1:                 ' |cut -c24-27}RPM F2 ${execi 8 sensors | grep -A 0 'fan2:                 ' |cut -c24-27}RPM · /SYSTEM ${fs_used /}/${fs_free /} · /HOME ${fs_used /home/}/${fs_free /home/} · ↓ ${downspeed enp3s0} ↑ ${upspeed enp3s0} · ${time %a %d %b} ·  ${time %H:%M} 
-
+$kernel · $uptime · CPU ${cpu}%  RAM ${memperc}% · CPU ${execi 8 sensors | grep -A 0 'Physical id 0:' |cut -c18-19 }° GPU ${execi 8 nvidia-settings -q gpucoretemp | grep -A 0 '(archlinux:0.0): ' |cut -c44-45}° · F1 ${execi 8 sensors | grep -A 0 'fan1:                 ' |cut -c24-27}RPM F2 ${execi 8 sensors | grep -A 0 'fan2:                 ' |cut -c24-27}RPM · /SYSTEM ${fs_used /}/${fs_free /} · /HOME ${fs_used /home/}/${fs_free /home/} · ↓ ${downspeed enp3s0} ↑ ${upspeed enp3s0} · ${time %a %d %b} · ${time %H:%M} 
