@@ -10,7 +10,7 @@ herbstluftwm dzen2 compton transset-df monaco-powerline-font-git scrot conky feh
 resolution
 =================
 1920x1080<br>
-it can be changed in *autostart*, *panel.sh*, *panel2.sh* and virtual monitors padding need some adjustements in *autostart*
+resolution can be changed in *autostart*, *panel.sh*, *panel2.sh* and virtual monitors padding need some adjustements in *autostart*
 
 tags
 =================
