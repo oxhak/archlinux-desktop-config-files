@@ -13,12 +13,12 @@ $handle = sub {
     (my $wrappedfinal = $wrapped) =~ s/\n\n//g;
     my $menu_select = $ref->{'menu_select'};
 
-    my $string = 
-            "\e[47m\e[30m". #this is the text layout, for customize color and more see http://misc.flogisoft.com/bash/tip_colors_and_formatting
-            ${menu_select} . ''.
-            "\e[44m\e[39m\033[1m ".
+    my $string =
+          #  "\e[47m\e[90m". #this is the text layout, for customize color and more see http://misc.flogisoft.com/bash/tip_colors_and_formatting
+            "\e[1m[\033[m" . ${menu_select} . "\e[1m] ".
+            "\e[49m\e[1m".
             ${sn} . ''.
-            "\033[m\e[49m\n".
+            "\n\033[m\e[49m".
             ${wrappedfinal} . ''.
             "\n \n";
 
