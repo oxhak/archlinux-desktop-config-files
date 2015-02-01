@@ -38,6 +38,7 @@ switch to next right tag *SUPER + RIGHT ARROW*<br>
 switch to next left tag *SUPER + LEFT ARROW*<br>
 full screen *SUPER + F*<br>
 remove layout *SUPER + R*<br>
+close app *SUPER + SHIFT + C*<br>
 
 screenshot
 =================
