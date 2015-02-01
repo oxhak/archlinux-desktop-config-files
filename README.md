@@ -25,6 +25,7 @@ hcrm *name tag* (for removing existing tag)<br>
 =================
 reload Herbstluftwm *SUPER + SHIFT + R*<br>
 open terminal (urxvt) *SUPER + T*<br>
+close app *SUPER + SHIFT + C*<br>
 create layout *SUPER + O or U*<br>
 focus to next layout *SUPER + TAB*<br>
 resize layout height *SUPER + CTRL + L or H*<br>
@@ -38,7 +39,6 @@ switch to next right tag *SUPER + RIGHT ARROW*<br>
 switch to next left tag *SUPER + LEFT ARROW*<br>
 full screen *SUPER + F*<br>
 remove layout *SUPER + R*<br>
-close app *SUPER + SHIFT + C*<br>
 
 screenshot
 =================
