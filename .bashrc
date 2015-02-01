@@ -11,11 +11,6 @@ PS1='\u\w: '
 #///////////UPDATE SYSTEM
 alias update='yaourt -Syu --aur --noconfirm'
 
-#///////////POWER OFF
-alias veille='sudo pm-suspend'
-alias reboot='sudo shutdown -r now'
-alias turnoff='sudo shutdown -h now'
-
 #///////////KILL XORG
 alias killx='sudo pkill X'
 
