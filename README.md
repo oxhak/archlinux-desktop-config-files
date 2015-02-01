@@ -1,4 +1,4 @@
-archlinux-desktop-config-files
+Ox HaK ArchLinux Desktop Config Files
 =================
 WM is Herbsluftwm
 https://wiki.archlinux.org/index.php/Herbstluftwm
