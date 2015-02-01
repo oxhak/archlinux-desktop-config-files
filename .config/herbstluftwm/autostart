@@ -1,18 +1,12 @@
 #!/bin/bash
-#exec /home/oxhak/Scripts/ConkyWeather.sh &
-killall compton &
-killall conky &
-#feh --bg-fill  ~/Images/wallpaper.png &
 killall dzen2 &
+killall conky &
 
 function hc() {
     herbstclient "$@"
 }
 
 hc emit_hook reload
-
-
-hsetroot -solid '#1f1f1f'
 
 # remove all existing keybindings
 hc keyunbind --all
@@ -84,117 +78,103 @@ hc keybind $Mod-Shift-j shift down
 hc keybind $Mod-Shift-k shift up
 hc keybind $Mod-Shift-l shift right
 
-#Screenshot 
+#Screenshot
 hc keybind Print spawn ~/.config/herbstluftwm/screenshot.sh
 
 #Dmenu
 hc keybind $Mod-F2 spawn dmenu_run -b -i #-nb '#729FCF' -nf '#888888' -sb '#FFFF84' -sf '#1e1e1e'
 
 # colors
-hc set frame_border_active_color '#2b2b2b'
-hc set frame_border_normal_color '#2b2b2b'
-hc set frame_bg_normal_color '#1f1f1f'
-hc set frame_bg_active_color '#1f1f1f'
-hc set frame_active_opacity 100
-hc set frame_normal_opacity 100
+hc set frame_border_active_color '#000000'
+hc set frame_border_normal_color '#000000'
+hc set frame_bg_normal_color '#000000'
+hc set frame_bg_active_color '#000000'
+hc set frame_active_opacity 60
+hc set frame_normal_opacity 60
 hc set frame_border_width 4
 hc set window_border_width 0
 hc set window_border_inner_width 0
-hc set window_border_normal_color '#2b2b2b'
-hc set window_border_active_color '#2b2b2b'
+hc set window_border_normal_color '#000000'
+hc set window_border_active_color '#000000'
 hc set frame_gap 8
 hc set always_show_frame 1
 hc set frame_bg_transparent 0
-# add overlapping window borders 
+# add overlapping window borders
 hc set window_gap 0
 hc set frame_padding 0
 hc set smart_window_surroundings 0
 hc set smart_frame_surroundings 0
 hc set mouse_recenter_gap 0
 
-
-# rules
+#rules
 hc unrule -F
-#hc rule class=XTerm tag=3 # move all xterms to tag 3
-#hc rule class=Vlc tag=1..20
 hc rule focus=off # normally do not focus new clients
-# give focus to most common terminals
 hc rule class~'(.*[Rr]xvt.*|.*[Tt]erm|Konsole)' focus=on
-#hc rule class~'Firefox' tag=1
 hc rule class~'Steam' tag=steam
 hc rule class~'Thunderbird' tag=mail
 hc rule class~'Vlc' tag=vlc
-#hc rule class~'Vlc' tag=video
-#hc rule class~'Conky' tag=visible
+hc rule instance=Dialog pseudotile=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' floating=on pseudotile=on
-#hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' manage=off
-#hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK)' manage=off
-#hc rule title=vlc-video-float manage=off class=MPlayer tag=visible
-#hc rule title=conkyfloat tag=test
-
 hc rule title=ConkyFloatGraphs manage⁼off
-
-#hc rule title='Popcorn Time' tag=video focus=off
+hc rule title=mplayer-video tag=video focus=off
+hc rule title=mplayer-video-ext tag=streamext focus=off fullscreen=on
+hc rule title=mplayer-video-tv tag=streamtv focus=off fullscreen=on
 hc rule title=vlc-video-float tag=video focus=off
+hc rule title=vlctv tag=tv focus=off fullscreen=on
+hc rule title=vlcext tag=vlcvideoext focus=on fullscreen=on
 hc rule title=twitter-float tag=twitter focus=off
 hc rule title=tvterm tag=tv focus=off
-hc rule class~'ProjectM-pulseaudio' tag=tv
+hc rule title=extterm tag=ext focus=off
+hc rule title=plugin-container fullscreen=on focus=on
 
-# unlock, just to be sure
-#hc unlock
-
+#tree
 herbstclient set tree_style '╾│ ├└╼─┐'
 
-# do multi monitor setup here, e.g.:
-# hc set_monitors 1280x1024+0+0 1280x1024+1280+0
-# or simply:
-#hc detect_monitors
-#hc set_monitors 1920x1080+0+0 1920x1080+0+0 
-hc set_monitors 1920x1080+0+0 1920x1080+0+0 1920x1080+0+0  #1920x1080+1920+0 
+#monitors
+hc set_monitors 1920x1080+0+0
+hc pad 0 25 343 25 0
 
-hc chain , add video
-hc focus_monitor 1
-hc use video
-hc lock_tag video
+hc add twitter
+hc add_monitor 352x1030+1568+25 twitter maintwitter
+hc lock_tag maintwitter
 
-hc chain , add twitter
-hc focus_monitor 2
-hc use twitter
-hc lock_tag twitter
+#other reals monitors
 
-#hc chain , add tv
-#hc focus_monitor 3
-#hc use tv
-#hc lock_tag tv
+#hc add ext
+#hc add_monitor 1366x768+1920+0 ext mainext
+#hc pad mainext 0 0 25 0
 
-hc focus_monitor 0
-hc use term
+#hc add tv
+#hc add_monitor 1920x1080+3286+0 tv maintv
+#hc pad maintv 0 0 25 0
 
-# find the panel
-#herbstclient pad $(herbstclient list_monitors | cut -d: -f1) 80 460 0 0;
-herbstclient pad 0 17 338 17 -6;
-herbstclient pad 1 17 -6 854 1573;
-herbstclient pad 2 217 -6 17 1573;
 
+#panels
+
+#conky panel
 panel=~/.config/herbstluftwm/panel.sh
-$panel 0 &
-#[ -x "$panel" ] || panel=/etc/xdg/herbstluftwm/panel.sh
- #for monitor in  $(herbstclient list_monitors | cut -d: -f1); do
-     # start it on each monitor
- #   $panel $monitor &
-#done
+$panel 0
 
-#panel2=~/.config/herbstluftwm/panel2.sh
-#[ -x "$panel2" ] || panel=/etc/xdg/herbstluftwm/panel.sh
- #for monitor in  $(herbstclient list_monitors | cut -d: -f1); do
-     # start it on each monitor
-  #       $panel2 $monitor &
- #done
+#list app panel
 panel2=~/.config/herbstluftwm/panel2.sh
-$panel2 0 &
+$panel2 0
 
-sleep 1
-compton --backend glx &
-#transset-df .8 -n dzenbottom &
-#transset-df .8 -n dzentop &
+#others real monitors panels
+
+#panel3=~/.config/herbstluftwm/panel3.sh
+#$panel3 3
+
+#panel4=~/.config/herbstluftwm/panel4.sh
+#$panel4 4
+
+#transparency panels
+sleep 1 &&
+exec `(transset-df .8 -n dzentop >/dev/null 2>&1 &)` &
+sleep 1 &&
+exec `(transset-df .8 -n dzenbottom >/dev/null 2>&1 &)` &
+
+#sleep 1 &&
+#exec `(transset-df .8 -n dzentv >/dev/null 2>&1 &)` &
+#sleep 1 &&
+#exec `(transset-df .8 -n dzenext >/dev/null 2>&1 &)` &

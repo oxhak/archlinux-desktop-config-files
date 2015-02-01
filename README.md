@@ -3,8 +3,6 @@ archlinux-desktop-config-files
 WM is Herbsluftwm
 https://wiki.archlinux.org/index.php/Herbstluftwm
 
-<b>When WM start, I need to reload it one time to hide tags of others virtuals monitors (two at right) with SUPER + SHIFT + R keys.</b>
-
 resolution
 =================
 1920x1080<br>
