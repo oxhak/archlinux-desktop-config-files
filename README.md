@@ -9,6 +9,11 @@ https://wiki.archlinux.org/index.php/Herbstluftwm
 More commands informations
 http://herbstluftwm.org/herbstluftwm.html
 
+For the video at top right, vlc need to have no incrusted video to interface parameter.
+And be run with "vlcmini" command.
+
+Look at the .bashrc file for custom commands and learn more how to.
+
 archlinux dependency's
 =================
 herbstluftwm dzen2-git lm_sensors rxvt-unicode compton-git git transset-df monaco-powerline-font-git mplayer scrot conky feh ttytter perl-term-readline-ttytter xorg-fonts-type1 ttf-dejavu artwiz-fonts font-bh-ttf font-bitstream-speedo gsfonts sdl_ttf ttf-bitstream-vera ttf-cheapskate ttf-liberation
