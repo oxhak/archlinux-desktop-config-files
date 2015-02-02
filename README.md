@@ -12,7 +12,7 @@ http://herbstluftwm.org/herbstluftwm.html
 For the video at top right, vlc need to have no incrusted video to interface parameter.<br>
 Run vlc with "vlcmini" command.
 
-Look at the .bashrc file for custom commands and learn more how to.
+Look at the .bashrc, and autostart "rules", files for custom commands and learn more how to.
 
 Do not hesitate to send me a screenshot of your new config. :)<br>
 Twitter @oxhak.
