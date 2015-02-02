@@ -9,9 +9,13 @@ https://wiki.archlinux.org/index.php/Herbstluftwm
 More commands informations
 http://herbstluftwm.org/herbstluftwm.html
 
-For the video at top right, vlc need to have no incrusted video to interface parameter, and be run with "vlcmini" command.
+For the video at top right, vlc need to have no incrusted video to interface parameter.<br>
+Run vlc with "vlcmini" command.
 
 Look at the .bashrc file for custom commands and learn more how to.
+
+Do not hesitate to send me screenshot of your new config.<br>
+Twitter @oxhak. ;)
 
 archlinux dependency's
 =================
