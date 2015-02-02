@@ -26,7 +26,7 @@ alias add='$HOME/.start.sh'
 #////// Open VLC at the top right layout (vlc need config with external video window)
 alias vlcmini='(herbstclient add vlc && herbstclient move_monitor maintwitter 352x830+1568+225 && herbstclient add video && herbstclient add_monitor 1920x1080+0+0 video mainvideo && herbstclient pad mainvideo 25 0 846 1568 && herbstclient lock_tag mainvideo && herbstclient use vlc && vlc --video-title=vlc-video-float >/dev/null 2>&1 && herbstclient use term && herbstclient remove_monitor mainvideo && herbstclient move_monitor maintwitter 352x1030+1568+25 && herbstclient merge_tag vlc && herbstclient merge_tag video &)'
 
-#///Livestreamer
+#///Livestreamer (use like "live url quality")
 live(){
   (herbstclient add vlc && herbstclient move_monitor maintwitter 352x830+1568+225 && herbstclient add video && herbstclient add_monitor 1920x1080+0+0 video mainvideo && herbstclient pad mainvideo 25 0 846 1568 && herbstclient lock_tag mainvideo && herbstclient use vlc && urxvt -e livestreamer --player 'vlc --video-title=vlc-video-float' $1 $2 >/dev/null 2>&1 && herbstclient use term && herbstclient remove_monitor mainvideo && herbstclient move_monitor maintwitter 352x1030+1568+25 && herbstclient merge_tag vlc && herbstclient merge_tag video &)
 }
