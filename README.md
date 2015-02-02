@@ -15,7 +15,7 @@ Run vlc with "vlcmini" command.
 Look at the .bashrc, and autostart "rules", files for custom commands and learn more how to.
 
 Do not hesitate to send me a screenshot of your new config. :)<br>
-Twitter @oxhak.
+Twitter @OxHaK.
 
 archlinux dependency's
 =================
