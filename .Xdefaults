@@ -4,8 +4,8 @@ URxvt.keysym.M-v:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.url-launcher:     firefox
 URxvt.matcher.button:   1
-URxvt.font: xft:Monaco for Powerline:pixelsize=18:antialias=false
-URxvt.boldFont: xft:Monaco for Powerline:bold:pixelsize=18:antialias=false
+URxvt.font: xft:Inconsolata for Powerline:pixelsize=22,xft:Monospace:pixelsize=18:antialias=false
+URxvt.boldFont: xft:Inconsolata for Powerline:bold:pixelsize=22,xft:Monospace:pixelsize=18:antialias=false
 URxvt.letterSpace: 0
 URxvt.lineSpace: 6
 urxvt*termName: rxvt
@@ -17,39 +17,33 @@ URxvt.internalBorder:   10
 URxvt*saveLines: 12000
 
 urxvt*depth: 32
-urxvt.background: [60]#000000
+urxvt.background: [50]#000000
 
 URxvt*foreground: #E8E8E8
 URxvt*background: #000000
 
-!! black dark/light
-*color0: #111111
-*color8: #2e3436
-
-!! red dark/light
-*color1: #D64541
-*color9: #E74C3C
-
-!! green dark/light
-*color2: #049372
-*color10: #26C281
-
-!! yellow dark/light
-*color3: #F7CA18
-*color11: #F5D76E
-
-!! blue dark/light
-*color4: #4183D7
-*color12: #59ABE3
-
-!! magenta dark/light
-*color5: #8E44AD
-*color13: #9B59B6
-
-!! cyan dark/light
-*color6: #6BB9F0
-*color14: #89C4F4
-
-!! white dark/light
-*color7: #BDC3C7
-*color15: #ececec
+!! Gobal Terms color
+! black + red
+*color0:      #000000
+*color1:      #cd4040
+! green + yellow
+*color2:      #8eae71
+*color3:      #d2b48c
+! blue + purple
+*color4:      #5f7b8a
+*color5:      #bdbda4
+! cyan + white
+*color6:      #686868
+*color7:      #bfbfbf
+! bright-black + bright-red
+*color8:      #000000
+*color9:      #ee8080
+! bright-green + bright-yellow
+*color10:     #80dd80
+*color11:     #cdcdc1
+! bright-blue + bright-purple
+*color12:     #9f9faf
+*color13:     #dfdfd8
+! bright-cyan + bright-white
+*color14:     #8f9faf
+*color15:     #ffffff
